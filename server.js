@@ -3,7 +3,7 @@ const path = require('path');
 
 const app = express();
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname));
 
 const SYSTEM = `Te a Kerék Hotel AI asszisztense vagy. Magyarul válaszolj, barátságosan és szakszerűen. Rövid, lényegre törő válaszokat adj.
 
